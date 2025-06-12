@@ -1,0 +1,52 @@
+.newletter-img{
+    width: 1080px;
+    margin: 0 auto;
+}
+/* .newletters{
+    height: 400px;
+    padding: 100px 50px
+} */
+.newletter{
+    position: relative;
+    margin-bottom: 135px;
+}
+.newletter-img img{
+    width: 100%;
+}
+.newletter-content{
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    width: 970px;
+    align-items: center;
+}
+.newletter-content h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
+.newletter-login input{
+    width: 289px;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    color: #ABABAB;
+    font-style: italic;
+    font-size: 15px;
+}
+.newletter-login button{
+    width: 190px;
+    height: 70px;
+    background-color: #274C5B;
+    /* border: none; */
+    border-radius: 15px; 
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

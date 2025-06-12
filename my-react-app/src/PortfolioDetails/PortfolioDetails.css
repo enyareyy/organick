@@ -1,0 +1,115 @@
+/* .portfolio-single-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 255px;
+    width: 95%;
+    margin: 0 auto;
+}
+.publick-block{
+    height: 255;
+    width: 40px;
+    background-color: #FAFAFA;
+}
+.publik-info{
+    display: flex;
+    width: 35%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}*/
+.standart-info{
+    width: 50%;
+    margin-left: 70px;
+} 
+
+.portfolio-single-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    position: absolute;
+    top: 555px;
+    left: 155px;
+    margin-bottom: 250px;
+    z-index: 2;
+}
+
+.publick-block {
+    width: 40%;
+    background-color: #FAFAFA;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* height: 150px; */
+    
+}
+
+.publik-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline; 
+}
+
+.publick-punkt,
+.publick-trusts,
+.publick-items {
+    display: flex;
+    flex-direction: column;
+}
+.publick-punkt{
+    margin-left: 50px;
+}
+.publick-punkt,
+.publick-items {
+    margin-right: 10px; 
+}
+.publick-punkt{
+    color: #274C5B;
+}
+.publick-trusts {
+    margin-right: 2px;
+    color: #274C5B;
+}
+.publick-items{
+    color: #525C60;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15.2px;
+}
+
+
+.portfolio-details-head-img{
+    position: relative;
+}
+.farm-block{
+    margin-top: 190px;
+    margin-bottom: 100px;
+}
+.farm{
+    /* margin-top: 190px; */
+    width: 70%;
+    margin: 0 auto;
+}
+.farm h2{
+    color: #274C5B;
+    font-size: 35px;
+}
+.farm-rabbit-img img{
+    width: 686px;
+}
+.farm-rabbit-img p{
+    margin-left: 260px;
+    color: #525C60;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}

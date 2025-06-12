@@ -1,0 +1,50 @@
+.grow-head{
+    text-align: center;
+}
+.grow-content{
+    display: flex;
+    justify-content: space-between;
+}
+.grow-1-content{
+    text-align: right;
+    margin-top: 80px;
+}
+.grow-2-content{
+    text-align: left;
+    margin-top: 80px;
+}
+.grow-cart-1{
+    margin-bottom: 10px;
+}
+.grow-img{
+    width: 483px;
+}
+.grow-img img{
+    width: 100%;
+}
+.grow-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-grow{
+    margin-bottom: 150px;
+}
+.service-video-bc{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.service-video-content{
+    margin-top: 150px;
+}
+.service-video-content span{
+    margin-bottom: 20px;
+}
+.service-video-content h1{
+    margin-bottom: 25px;
+}
+.service-video-content p{
+    margin-bottom: 50px;
+}

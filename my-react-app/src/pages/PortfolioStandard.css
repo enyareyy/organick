@@ -1,0 +1,80 @@
+.portfolio-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    
+}
+.portfolio-items a{
+    text-decoration: none;
+}
+.portfolio-item{
+    width: 351px;
+    height: 321px;
+    margin-bottom: 70px;
+}
+.portfolio-item img{
+    width: 341px;
+    height: 311px;
+    border-radius: 20px;
+}
+.portfolio-item p{
+    font-size: 18px;
+    font-family: "Yellowtail", cursive;
+    color: #7EB693;
+}
+.portfolio-item h4{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #274C5B;
+    margin-bottom: 3px;
+}
+
+
+.portfolio-hover {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.portfolio-hover img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 321px;
+    height: 291px;
+    background-color: #FFFFFFE8;
+    opacity: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    border-radius: 15px;
+    transform: translate(-50%, -50%); 
+}
+
+.portfolio-hover:hover .overlay {
+    opacity: 1;
+}
+.btn-icon{
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: #7EB693;
+    border-radius: 50%;
+}
+.icon {
+    color: white;
+    font-size: 24px;
+}
+
+.overlay:hover .icon {
+    transform: scale(1.2);
+}

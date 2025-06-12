@@ -1,0 +1,12 @@
+.productError{
+    text-align: center;
+    color: #274C5B;
+    font-size: 45px;
+    padding-top: 45px;
+}
+.search-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+}
