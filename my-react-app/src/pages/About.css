@@ -17,7 +17,6 @@
 }
 .about-hero-img{
     width: 721px;
-    /* border: 1px solid black; */
 }
 .about-hero-img img{
     width: 100%;
@@ -28,7 +27,6 @@
 .about-content-hero-card{
     display: flex;
     width: 490px;
-    /* border: 1px solid black; */
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -65,11 +63,9 @@
 .circle-one{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     gap: 10px;
     width: 241px;
     height: 61px;
-    /* border: 1px solid black; */
     border-radius: 35px;
     background-color: #ECECEC;
     padding-left: 15px;
@@ -81,7 +77,6 @@
 
 .choose-block-content{
     width: 671px;
-    /* border: 1px solid black; */
 }
 
 
@@ -123,7 +118,6 @@
     margin-bottom: 155px;
 }
 .our-team-card{
-    /* border: 1px solid black; */
     border-radius: 22px;
     background-color: #F9F8F8;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -178,14 +172,12 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black; */
     text-align: center;
     margin-top: 30px;
     margin-bottom: 155px;
 }
 .about-blue-card img{
     width: 240px;
-    /* border: 1px solid blanchedalmond; */
     background-color: white;
     border-radius: 15px;
     margin-bottom: 5px;

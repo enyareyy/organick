@@ -2,10 +2,6 @@
     width: 1080px;
     margin: 0 auto;
 }
-/* .newletters{
-    height: 400px;
-    padding: 100px 50px
-} */
 .newletter{
     position: relative;
     margin-bottom: 135px;
@@ -42,7 +38,6 @@
     width: 190px;
     height: 70px;
     background-color: #274C5B;
-    /* border: none; */
     border-radius: 15px; 
     font-size: 18px;
     font-weight: 600;

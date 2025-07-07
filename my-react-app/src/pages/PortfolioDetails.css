@@ -1,25 +1,3 @@
-/* .portfolio-single-block{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 15px;
-    height: 255px;
-    width: 95%;
-    margin: 0 auto;
-}
-.publick-block{
-    height: 255;
-    width: 40px;
-    background-color: #FAFAFA;
-}
-.publik-info{
-    display: flex;
-    width: 35%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}*/
 .standart-info{
     width: 50%;
     margin-left: 70px;
@@ -31,7 +9,6 @@
     align-items: center; 
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* border: 1px solid black; */
     border-radius: 15px;
     height: auto;
     width: 75%;
@@ -96,7 +73,6 @@
     margin-bottom: 100px;
 }
 .farm{
-    /* margin-top: 190px; */
     width: 70%;
     margin: 0 auto;
 }

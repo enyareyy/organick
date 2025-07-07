@@ -6,7 +6,7 @@ import './ShopSingle.css'
 import Star from '../assets/Star.png'
 import { FiArrowRight } from 'react-icons/fi'
 import Card from '../card/Card';
-import Newsletter from '../newsletter/Newsletter';
+import Newsletter from './Newsletter';
 import { useTranslation } from 'react-i18next';
 import { useCart } from 'react-use-cart';
 
@@ -17,7 +17,7 @@ const ShopSingle = () => {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
     const [shop, setShop] = useState([])
-    const [quantity, setQuantity] = useState(1); // количество
+    const [quantity, setQuantity] = useState(1); 
 const getSingleProduct =async () =>{
     const res =await axios.get(`https://6818f80e5a4b07b9d1d18a2e.mockapi.io/organic/food/${id}`)
     setProduct(res.data);
@@ -62,9 +62,7 @@ const handleAddToCart = () => {
     }
   
     localStorage.setItem('cart', JSON.stringify(existing));
-window.dispatchEvent(new Event('cart-updated')); // для Header
-// alert("Товар добавлен в корзину");
-
+window.dispatchEvent(new Event('cart-updated')); 
   };
   
 

@@ -12,7 +12,6 @@
 .messege-block{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     width: 282px;
     height: 83px;
     border: 1px solid #EEEEEE;
@@ -24,7 +23,6 @@
 .messege-block img{
     width: 69px;
     height: 69px;
-    /* border-radius: 15px; */
     margin-left: 15px;
     margin-right: 20px;
 }
@@ -36,7 +34,6 @@
 .farm-content{
     padding: 30px 40px;
     background-color: white;
-    /* border: 1px solid black; */
     border-radius: 15px;
     width: 400px;
 }

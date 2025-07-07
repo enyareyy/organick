@@ -8,50 +8,6 @@ import { useTranslation } from 'react-i18next'
 
 const OurTeam = () => {
 const {t}=useTranslation()
-    // const teamBio = [
-    //     {
-    //         id:1,
-    //         name:'Giovani Bacardo',
-    //         titul:'Farmer',
-    //         img: Gionavi,
-    //         socMedia: [Fb, Twitter],
-    //     },
-    //     {
-    //         id:2,
-    //         name:'Marianne Loreno',
-    //         titul:'Designer',
-    //         img: Marianne,
-    //         socMedia:[insta, Fb, Twitter],
-    //     },
-    //     {
-    //         id:3,
-    //         name:'Riga Pelore',
-    //         titul:'Farmer',
-    //         img: Riga,
-    //         socMedia:[insta, Fb, Twitter],
-    //     },
-    //     {
-    //         id:4,
-    //         name:'Keira Knightley',
-    //         titul:'Farmer',
-    //         img: Keira,
-    //         socMedia:[Fb, Twitter],
-    //     },
-    //     {
-    //         id:5,
-    //         name:'Scott Lawrence',
-    //         titul:'Designer',
-    //         img: Scott,
-    //         socMedia:[insta, Fb, Twitter],
-    //     },
-    //     {
-    //         id:6,
-    //         name:'Karen Allen',
-    //         titul:'Farmer',
-    //         img: Karen,
-    //         socMedia:[insta, Fb, Twitter],
-    //     },
-    // ]
   return (
     <div>
         <div className='about-head' style={{ 

@@ -129,7 +129,7 @@ const {t} = useTranslation()
         </div>
         <div className="icon-text">
           <h3>{t("Organic Foods Only")}</h3>
-          <p className='hero-two-content-p'>{t("Simply dummy text of the printing and typesetting ")}<br /> {t("industry. Lorem Ipsum")}</p>
+          <p className='hero-two-content-p'>{t("Simply dummy text of the printing and typesetting ")}<br /> {t("industry. Lorem Ipsum")}</p> 
         </div>
       </div>
       <div className="icon-one">

@@ -40,7 +40,7 @@ const Cart = () => {
     0
   );
 
-  return (
+  return (                                                                     
     <div className="container">
       <h1>{t("Cart")}</h1>
       {cart.length === 0 ? (
