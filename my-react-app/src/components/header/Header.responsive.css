@@ -1,4 +1,3 @@
-/* 📱 Планшеты и телефоны (1024px и меньше) */
 @media screen and (max-width: 1024px) {
   .header {
     flex-direction: column;
@@ -7,14 +6,12 @@
     gap: 10px;
   }
 
-  /* ✅ Бургер появляется */
   .menu-toggle {
     display: block;
     margin-left: auto;
     font-size: 28px;
   }
 
-  /* ✅ Меню прячется по умолчанию */
   .menu ul {
     flex-direction: column;
     align-items: flex-start;
@@ -25,7 +22,6 @@
     gap: 10px;
   }
 
-  /* ✅ Показываем меню при клике */
   .menu ul.show {
     display: flex;
   }
@@ -36,20 +32,17 @@
     font-size: 18px;
   }
 
-  /* ✅ Поле поиска становится шире */
   .search-wrapper {
     width: 100%;
     height: 50px;
     margin: 10px 0;
   }
 
-  /* ✅ Кнопка корзины на всю ширину */
   .cart-button {
     width: 100%;
     justify-content: center;
   }
 
-  /* ✅ Переключатель языка центрируем */
   .trnslt {
     width: 100%;
     display: flex;
@@ -59,8 +52,7 @@
   }
 }
 
-/* 📱 Мобильные телефоны (600px и меньше) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .menu li {
     font-size: 16px;
     margin: 8px 15px;
