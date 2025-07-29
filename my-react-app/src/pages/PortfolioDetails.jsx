@@ -1,5 +1,6 @@
 import React from 'react'
 import './PortfolioDetails.css'
+import './PortfolioDetails.responsive.css'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import rabbitFarm from '../assets/rabbit-farm.png'
@@ -138,7 +139,7 @@ const PortfolioDetails = () => {
               </p>
               <br /><br />
             </div>
-
+ 
             <div className="conclusion-farm">
               <h2>{t("Conclusion")}:</h2>
               <br /><br />

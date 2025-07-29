@@ -1,5 +1,6 @@
 import React from 'react'
 import './ContactUs.css'
+import './ContactUs.responsive.css'
 import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa'
 import BackgroundContact from '../assets/BackgroundContact.jpg'
 import bananaCont from '../assets/bananaCont.png'
@@ -7,7 +8,7 @@ import Iconmessege from '../assets/Iconmessege.png'
 import IconCall from '../assets/IconCall.png'
 import Farm from '../assets/Farm.png'
 import Location from '../assets/Location.png'
-import Newsletter from '../newsletter/Newsletter'
+import Newsletter from '../pages/Newsletter'
 import { useTranslation } from 'react-i18next'
 
 const ContactUs = () => {
@@ -61,7 +62,11 @@ const ContactUs = () => {
               <button> <FaPinterestP size={20} /> </button>
       </div>
             </div>
-          </div>
+          </div> 
+
+
+
+
 
           <div className="farm-block">
             <div className="farm-img">
@@ -77,7 +82,9 @@ const ContactUs = () => {
                 {t("a layout. The point of using.")}</p>
                 <br />
               </div>
-              <div className="farm-icon-block">
+              <div className="farm-icon-blocks">
+                <div>
+                  <div className="farm-icon-block">
                 <img src={Location} alt="" /> 
                 <div className="messege-content">
                   <h4>{t("New York, USA")}:</h4>
@@ -93,8 +100,16 @@ const ContactUs = () => {
                   {t("London SE1 9LQ")}</p>
                 </div>
               </div>
+                </div>
+                
+              </div>
+              
             </div>
           </div>
+
+
+
+
           <div className="contact-form-section">
   <form className="contact-form">
     <div className="form-row">
@@ -128,6 +143,8 @@ const ContactUs = () => {
     </div>
   </form>
 </div>
+
+
 
 <Newsletter/>
 

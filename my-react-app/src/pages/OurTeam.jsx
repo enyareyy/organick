@@ -1,7 +1,8 @@
 import React from 'react'
 import './OurTeam.css'
+import './OurTeam.responsive.css'
 import ourTeamBc from '../assets/ourTeamBc.png'
-import Newsletter from '../newsletter/Newsletter'
+import Newsletter from '../pages/Newsletter'
 import teamBio from '../teamData/teamData'
 import { useTranslation } from 'react-i18next'
 
@@ -20,7 +21,7 @@ const {t}=useTranslation()
             <div className="container">
                 <h1>{t("Our Team")}</h1>
             </div>
-        </div>
+        </div> 
 
         <div className="container">
             <div className="teamy">

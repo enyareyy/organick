@@ -19,9 +19,10 @@ import kapusta from '../assets/kapusta.png'
 import tomato from '../assets/tomato.png'
 import Vector from '../assets/Vector.png'
 import './Home.css'
+import './Home.responsive.css'; 
 import Card from '../card/Card'
 import axios from 'axios'
-import Newsletter from '../newsletter/Newsletter'
+import Newsletter from '../pages/Newsletter'
 import { useTranslation } from 'react-i18next'
 
 
@@ -59,7 +60,7 @@ const {t} = useTranslation()
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        width: '99vw',
+        width: '100%',
         height: '100vh'
 }}>
   <div className="container">
@@ -75,7 +76,7 @@ const {t} = useTranslation()
       </span>
     </button>
     </div>
-  </div>
+  </div> 
 </div>
 <div className="container">
 <div className="img-block">
@@ -101,66 +102,81 @@ const {t} = useTranslation()
 </div>
 </div>
 
-<div className='hero-two-bc' style={{ 
-        backgroundImage: `url(${HeroBcTwo})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        width: '99vw',
-        height: '100vh'
-}}>
-  <div className="container">
-    <div className='hero-two-content'> 
-    <span className='Yellowtail-green'>{t("About Us")}</span>
-    <h1 className='hero-two-content-h1'>{t("We Believe in Working")}
-      <br />
-    {t("Accredited Farmers")}</h1>
-    <br />
-    <p className='hero-two-content-p'>{t("Simply dummy text of the printing and typesetting industry. Lorem had ceased to")} 
-      <br />
-    {t("been the industry's standard dummy text ever since the 1500s, when an unknown ")}
-    <br />
-    {t("printer took a galley.")}</p>
-    <br />
-    <div className="hero-two-icons">
-      <div className="icon-one">
-        <div className="icon-img">
-          <img src={icon3} alt="" />
+<div className='hero-two-wrapper'>
+  <div
+    className='hero-two-bc'
+    style={{
+      backgroundImage: `url(${HeroBcTwo})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      width: '100%',
+      height: '100vh'
+    }}
+  >
+    <div className="container">
+      <div className='hero-two-content'> 
+        <div className="hero-two-content-header">
+        <span className='Yellowtail-green'>{t("About Us")}</span>
+          <h1 className='hero-two-content-h1'>
+          {t("We Believe in Working")}<br />
+          {t("Accredited Farmers")}
+        </h1>
+        <p className='hero-two-content-p'>
+          {t("Simply dummy text of the printing and typesetting industry. Lorem had ceased to")}<br />
+          {t("been the industry's standard dummy text ever since the 1500s, when an unknown")}<br />
+          {t("printer took a galley.")}
+        </p>
         </div>
-        <div className="icon-text">
-          <h3>{t("Organic Foods Only")}</h3>
-          <p className='hero-two-content-p'>{t("Simply dummy text of the printing and typesetting ")}<br /> {t("industry. Lorem Ipsum")}</p> 
+        
+        <div className="hero-two-icons">
+          <div className="icon-one">
+            <div className="icon-img">
+              <img src={icon3} alt="" />
+            </div>
+            <div className="icon-text">
+              <h3>{t("Organic Foods Only")}</h3>
+              <p className='hero-two-content-p'>
+                {t("Simply dummy text of the printing and typesetting")}<br />
+                {t("industry. Lorem Ipsum")}
+              </p> 
+            </div>
+          </div>
+          <div className="icon-one">
+            <div className="icon-img">
+              <img src={icon4} alt="" />
+            </div>
+            <div className="icon-text">
+              <h3>{t("Quality Standards")}</h3>
+              <p className='hero-two-content-p'>
+                {t("Simply dummy text of the printing and typesetting")}<br />
+                {t("industry. Lorem Ipsum")}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="about-hero-btn">
+          <Link to="/shop" className="hero-two-content-btn">
+            {t("Shop Now")}
+            <span className="icon-circle-two">
+              <FiArrowRight color="#fff" size={16} />
+            </span>
+          </Link>
         </div>
       </div>
-      <div className="icon-one">
-        <div className="icon-img">
-          <img src={icon4} alt="" />
-        </div>
-        <div className="icon-text">
-          <h3>{t("Quality Standards")}</h3>
-          <p className='hero-two-content-p'>{t("Simply dummy text of the printing and typesetting ")}<br /> {t("industry. Lorem Ipsum")}</p>
-        </div>
-      </div>
-    </div>
-    <div className="about-hero-btn">
-      <Link to="/shop" className="hero-two-content-btn">
-  {t("Shop Now")}
-  <span className="icon-circle-two">
-    <FiArrowRight color="##335B6B" size={16} />
-  </span>
-</Link>
-    </div>
-    
-
     </div>
   </div>
 </div>
+
+
+
+  
 <div className="container">
   <div className="shop-block">
     <div className="shop-block-head">
       <span className='Yellowtail-green'>{t("Categories")}</span>
       <h1 className='hero-two-content-h1'>{t("Our Products")}</h1>
-    </div>
+    </div> 
     <div className="product-grid">
             {products.map(item => (
               <Card key={item.id} product={item} />
@@ -180,75 +196,85 @@ const {t} = useTranslation()
 </div>
 
 <div style={{ 
-        backgroundImage: `url(${ImageeBc})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        width: '99vw',
-        height: '150vh'
+  backgroundImage: `url(${ImageeBc})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  width: '100%',
+  minHeight: '100vh',
+  paddingBottom: '50px'
 }}>
   <div className="container">
     <div className="Testimonial">
-    <span className='Yellowtail-green'>{t("Testimonial")}</span>
-    <h1 className='hero-two-content-h1'>{t("What Our Customer Saying?")}</h1>
-    <img className='Sara-Taylor-Img' src={SaraTaylor} alt="" />
-    <br />
-    <img className='Star-img' src={Star} alt="" />
-    <br />
-    <p className='hero-Testimonial-p'>{t("Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy ")}
-      <br />
-      {t("text of the printing and typesetting industry. Lorem Ipsum has been.")}</p>
-    <h3 className='hero-Testimonial-h3'>{t("Sara Taylor")}</h3>
-    <p className='hero-Testimonial-p2'>{t("Consumer")}</p>
-    <img className='Navigation-Img' src={Navigation} alt="" />
-    <hr style={{ backgroundColor: '#E0E0E0', height: '1px', border: 'none', width:'808px', margin:'0 auto', marginTop:'71px' }} />
-  </div>
-  <div className="counters">
-    <div className="counter-card">
-      <h1>100%</h1>
-      <p>{t("Organic")}</p>
+      <span className='Yellowtail-green'>{t("Testimonial")}</span>
+      <h1 className='testimonial-title'>{t("What Our Customer Saying?")}</h1>
+      <div className="avatar-container">
+        <img className='Sara-Taylor-Img' src={SaraTaylor} alt="Sara Taylor" />
+      </div>
+      <div className="rating-container">
+        <img className='Star-img' src={Star} alt="Rating" />
+      </div>
+      <p className='testimonial-text'>{t("Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.")}</p>
+      <h3 className='testimonial-name'>{t("Sara Taylor")}</h3>
+      <p className='testimonial-role'>{t("Consumer")}</p>
+      <div className="navigation-container">
+        <img className='Navigation-Img' src={Navigation} alt="Navigation" />
+      </div>
+      <div className="divider"></div>
     </div>
-    <div className="counter-card">
-      <h1>285</h1>
-      <p>{t("Active Product")}</p>
+    
+    <div className="counters">
+      <div className="counter-card">
+        <h1>100%</h1>
+        <p>{t("Organic")}</p>
+      </div>
+      <div className="counter-card">
+        <h1>285</h1>
+        <p>{t("Active Product")}</p>
+      </div>
+      <div className="counter-card">
+        <h1>350+</h1>
+        <p>{t("Organic Orchads")}</p>
+      </div>
+      <div className="counter-card">
+        <h1>25+</h1>
+        <p>{t("Years of Farming")}</p>
+      </div>
     </div>
-    <div className="counter-card">
-      <h1>350+</h1>
-      <p>{t("Organic Orchads")}</p>
-    </div>
-    <div className="counter-card">
-      <h1>25+</h1>
-      <p>{t("Years of Farming")}</p>
-    </div>
-  </div>
-  
   </div>
 </div>
+
+
+
+
 <div className="blue-bc">
   <div className="container">
     <div className="offer">
       <div className="offer-content">
-      <div className="offer-text">
-        <span className='Yellowtail-green'>{t("Offer")}</span>
-        <h1>{t("We Offer Organic For You")}</h1>
-      </div>
-      <div className="offer-btn">
-        <Link to="/shop" className="hero-content-button">
-          {t("View All Product")}
-          <span className="icon-circle-two">
-          <FiArrowRight color="#EFD372" size={16} />
-          </span>
+        <div className="offer-text">
+          <span className='Yellowtail-green'>{t("Offer")}</span>
+          <h1>{t("We Offer Organic For You")}</h1>
+        </div>
+        <div className="offer-btn">
+          <Link to="/shop" className="hero-content-button">
+            {t("View All Product")}
+            <span className="icon-circle-two">
+              <FiArrowRight color="#EFD372" size={16} />
+            </span>
           </Link>
-      </div>
+        </div>
       </div>
       <div className="product-grid">
-            {vegetables.map(item => (
-              <Card key={item.id} product={item} />
-            ))}
-          </div>
+        {vegetables.map(item => (
+          <Card key={item.id} product={item} />
+        ))}
+      </div>
     </div>
   </div>
 </div>
+
+
+<div>
 <div className="eco-block">
   <div className="eco-img">
     <img src={Eco} alt="" />
@@ -269,6 +295,10 @@ const {t} = useTranslation()
     <h3 className='eco-content-h3'>{t("Farming Strategies of Today")}</h3>
     <p className='eco-content-p'>{t("Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium ")}<br /> {t("doloremque laudantium. Sed ut perspiciatis.")}</p>
   </div>
+  </div>
+
+
+
   <div className="tree-card-bc">
     <div className="tree-cards">
       <div className="tree-card">
@@ -285,6 +315,8 @@ const {t} = useTranslation()
       </div>
     </div>
   </div>
+
+  
   <div className="container">
   <div className="news">
   <div className="offer-content">

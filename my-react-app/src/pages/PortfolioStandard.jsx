@@ -1,5 +1,6 @@
 import React from 'react'
 import './PortfolioStandard.css'
+import './PortfolioStandard.responsive.css'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 import PortfolioStandardBc from '../assets/PortfolioStandardBc.png'
@@ -15,7 +16,7 @@ import raspberry from '../assets/raspberry.jpg'
 import raspberryFull from '../assets/raspberryFull.png'
 import honey from '../assets/honey.png'
 import honeyFull from '../assets/honeyFull.png'
-import Newsletter from '../newsletter/Newsletter'
+import Newsletter from '../pages/Newsletter'
 import { useTranslation } from 'react-i18next'
 
 const PortfolioStandard = () => {

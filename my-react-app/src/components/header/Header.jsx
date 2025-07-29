@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../../assets/Logo.png';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { FiShoppingCart, FiSearch } from 'react-icons/fi';
+import { FiShoppingCart, FiSearch, FiMenu  } from 'react-icons/fi';
 import '../../styles/styles.css';
 import './Header.css';
+import './Header.responsive.css'
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n/18in.js';
 
 const Header = () => {
   const [value, setValue] = useState('');
   const [totalItems, setTotalItems] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const { t } = useTranslation();
 
@@ -21,11 +23,10 @@ const Header = () => {
 
   useEffect(() => {
     updateTotalItems();
-
     const handleStorageChange = () => updateTotalItems();
-    window.addEventListener('storage', handleStorageChange);
-
     const handleCartUpdated = () => updateTotalItems();
+
+    window.addEventListener('storage', handleStorageChange);
     window.addEventListener('cart-updated', handleCartUpdated);
 
     return () => {
@@ -41,9 +42,7 @@ const Header = () => {
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      handleSearch();
-    }
+    if (e.key === 'Enter') handleSearch();
   };
 
   return (
@@ -55,20 +54,25 @@ const Header = () => {
               <img src={Logo} alt="Logo" />
             </div>
           </Link>
+
+          <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+            <FiMenu />
+          </button>
+
           <div className="menu">
-            <ul>
+            <ul className={menuOpen ? 'show' : ''}>
               <li><Link to="/">{t("Home")}</Link></li>
               <li><Link to="/about">{t("About")}</Link></li>
               <li className="dropdown-parent">
                 <Link>{t("Pages")}</Link>
                 <ul className="dropdown">
-                  <br /> 
+                  <br />
                   <li><Link to="/portfolio-standard">{t("Portfolio Standard")}</Link></li>
                   <br />
                   <li><Link to="/our-team">{t("Our Team")}</Link></li>
                   <br />
                   <li><Link to="/contact-us">{t("Contact Us")}</Link></li>
-                </ul> 
+                </ul>
               </li>
               <li><Link to="/shop">{t("Shop")}</Link></li>
               <li><Link to="/services">{t("Services")}</Link></li>

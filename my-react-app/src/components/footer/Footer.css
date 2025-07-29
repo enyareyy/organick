@@ -1,61 +1,92 @@
-.footer{
+.footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 20px;
+    padding: 40px 20px;
     color: #525C60;
+    align-items: stretch;
+    text-align: center;
+    flex-wrap: wrap;
 }
-.contact{
-    width: 290px;
-    height: 320px;
+
+/* ✅ Общий стиль для блоков */
+.contact, .logo, .lost {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    position: relative;
+}
+
+/* ✅ Вертикальные разделители (ТОЛЬКО на десктопе) */
+.contact::after, 
+.logo::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #D4D4D4;
+}
+
+/* ✅ Контент внутри блоков */
+.contact {
     text-align: right;
-    padding-right: 40px;
 }
-.contact a{
+
+.logo {
+    text-align: center;
+}
+
+.logo p {
+    max-width: 90%; 
+    margin: 15px auto;
+    line-height: 1.5;
+}
+
+.contact a,
+.lost a {
     text-decoration: none;
     color: #525C60;
 }
-.logo{
-    width: 500px;
-    height: 246px;
-    text-align: center;
-}
-.logo img{
-    width: 199px;
-    height: 54px;
-}
-.logo p{
-    width: 450px;
-    margin: 0 auto;
-}
-.lost{
-    width: 280px;
-    height: 304px;
+
+.lost {
     text-align: left;
-    padding-left: 40px;
 }
-.lost li{
+
+.lost li {
     list-style: none;
     color: #274C5B;
+    margin-bottom: 8px;
 }
-.social-icons button{
-    border-radius: 50px;
-    margin-left: 10px;
+
+/* ✅ Соц. иконки */
+.social-icons button {
+    border-radius: 50%;
+    margin: 0 6px;
     padding: 10px;
     background-color: #EFF6F1;
     color: #274C5B;
     border: none;
+    cursor: pointer;
+    transition: background 0.3s;
 }
-.lost a{
-    color: #274C5B;
-    text-decoration: none;
+.social-icons button:hover {
+    background-color: #dbe9e1;
 }
-.divider {
-    width: 1px;
-    background-color: #D4D4D4;
-    height: 306px;
+
+/* ✅ Нижняя полоска */
+.footer-hr {
+    margin-top: 30px;
+    border: none;
+    height: 1px;
+    background-color: #eee;
 }
-.lost-p{
+
+.lost-p {
     text-align: center;
     color: #525C60;
+    margin: 20px 0;
+    font-size: 14px;
 }

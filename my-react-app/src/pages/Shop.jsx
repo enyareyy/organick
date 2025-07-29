@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Shop.css'
+import './Shop.responsive.css'
 import Card from '../card/Card'
 import shopBc from '../assets/shop-bc.png'
-import Newsletter from '../newsletter/Newsletter'
+import Newsletter from '../pages/Newsletter'
 import { useTranslation } from 'react-i18next'
 const Shop = () => {
     const [product, setProduct] = useState([])
@@ -40,7 +41,7 @@ const Shop = () => {
                 <Card key={item.id} product={item} />
                 ))}
             </div>
-            </div>
+            </div> 
         <Newsletter/>
         </div>
         

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 import './Cart.css';
+import './Cart.responsive.css'
 import { useTranslation } from 'react-i18next';
 
 const Cart = () => { 
-  const {t}=useTranslation()
+  const {t}=useTranslation() 
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
@@ -62,7 +63,7 @@ const Cart = () => {
                 <tr key={item.id}>
                   <td className="cart-product">
                     <img src={item.link} alt={item.title} />
-                    <span>{item.title}</span>
+                    <h4>{item.title}</h4>
                   </td>
                   <td>${parsePrice(item.discountPrice).toFixed(2)}</td>
                   <td>
@@ -79,7 +80,7 @@ const Cart = () => {
                       </button>
                     </div>
                   </td>
-                  <td>${(parsePrice(item.discountPrice) * item.quantity).toFixed(2)}</td>
+                  <td className='TableTotal'>${(parsePrice(item.discountPrice) * item.quantity).toFixed(2)}</td>
                   <td>
                     <button
                       className="remove-btn"

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Newsletter.css'
+import './Newsletter.responsive.css'
 import Background from '../assets/Background.png'
 import { useTranslation } from 'react-i18next'
 const Newsletter = () => {

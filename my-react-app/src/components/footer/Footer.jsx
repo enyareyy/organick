@@ -3,6 +3,7 @@ import Logo from '../../assets/Logo.png'
 import { Link, useNavigate } from 'react-router-dom'
 import '../../styles/styles.css'
 import './Footer.css'
+import './Footer.responsive.css'
 import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 
@@ -26,7 +27,6 @@ const Footer = () => {
         <h4>{t("Address")}</h4>
         <p>88 road, borklyn street, USA</p>
       </div>
-      <div className="divider"></div>
       <div className="logo">
         <img src={Logo} alt="" />
         <br />
@@ -41,9 +41,10 @@ const Footer = () => {
         <button> <FaPinterestP size={20} /> </button>
       </div>
       </div>  
-      <div className="divider"></div>
+      
       <div className="lost">
-        <h2>{t("Utility Pages")}</h2>
+        <div>
+          <h2>{t("Utility Pages")}</h2>
         <br />
         <br />
         <ul>
@@ -57,6 +58,7 @@ const Footer = () => {
           <br />
           <li><Link>{t("Changelog")}</Link></li>
         </ul>
+        </div>
       </div>
       </div>
     </div>

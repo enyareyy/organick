@@ -31,6 +31,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0.5, 0.1);
     transition:  transform 1.5s;
 }
+
+
+
+
+
 .farm-content{
     padding: 30px 40px;
     background-color: white;
@@ -43,11 +48,11 @@
 .farm-img img{
     width: 100%;
 }
-
+ 
 .farm-icon-block{
     display: flex;
     margin-bottom: 20px;
-}
+} 
 .farm-icon-block h4{
     color: #525C60;
 }
@@ -65,6 +70,8 @@
     top: 70px;
     left: 600px;
 }
+
+
 
 .contact-form-section {
     padding: 60px 20px;

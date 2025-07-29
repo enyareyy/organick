@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiArrowRight, FiCircle  } from 'react-icons/fi'
 import './About.css'
+import './About.responsive.css'
 import AboutBck from '../assets/about-bck.png'
 import abputSalat from '../assets/aboutSalat.png'
 import traktor from '../assets/trakrot.png'
@@ -14,7 +15,7 @@ import Spicy from '../assets/Spicy.png'
 import Nuts from '../assets/Nuts.png'
 import Fruits from '../assets/Fruits.png'
 import Vegetable from '../assets/Vegetable.png'
-import Newsletter from '../newsletter/Newsletter'
+import Newsletter from '../pages/Newsletter'
 import { useTranslation } from 'react-i18next'
 import teamBio from '../teamData/teamData'
 
@@ -33,6 +34,7 @@ const About = () => {
                 <h1>{t("About Us")}</h1>
             </div>
         </div> 
+
         <div className="aboutHero">
             <div className="about-hero-img">
                 <img src={abputSalat} alt="" />
@@ -72,6 +74,8 @@ const About = () => {
             </button> 
             </div>
         </div>
+
+
         <div className="about-bc-color">
             <div className="container">
                 <div className="choose-block">
@@ -142,6 +146,8 @@ const About = () => {
                 
             </div>
         </div>
+
+
 <div className="container">
     <div className="our-team">
             <div className="our-team-head">
@@ -180,10 +186,11 @@ const About = () => {
     </div>
   ))}
 </div>
-
         </div>
 </div>
     
+
+
     <div className="about-blue-bc">
         <div className="container">
             <div className="about-blue-head">
@@ -207,7 +214,7 @@ const About = () => {
                     <img src={Vegetable} alt="" />
                     <h3>{t("Vegetable")}</h3>
                 </div>
-            </div>
+            </div> 
                 
         </div>
             

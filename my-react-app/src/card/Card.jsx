@@ -1,5 +1,6 @@
 import React from 'react'
 import './Card.css' 
+import './Card.responsive.css'
 import { Link, useNavigate } from 'react-router-dom'
 import Star from '../assets/Star.png'
 import { useTranslation } from 'react-i18next'
@@ -24,8 +25,8 @@ const Card = ({ product }) => {
                 <span className="original">{product.price}</span>
                 <span className="discount">{product.discountPrice}</span>
             </div>
-                <img src={Star} alt="" />
-            </div>
+                <img className='imgStarCart' src={Star} alt="" />
+            </div> 
         </div>
         </Link>
         </div>

@@ -1,0 +1,110 @@
+@media screen and (max-width: 1024px) {
+
+    /* убираем фото */
+    .contact-img {
+      display: none;
+    }
+  
+    .contact-hero-1 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: -150px;
+    }
+  
+    .contact-content {
+      width: 100%;
+      max-width: 400px;
+      padding: 0 20px;
+    }
+  
+    .contact-content h1 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .contact-content p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  
+    .messege-block {
+      width: 90%;
+      max-width: 300px;
+      margin: 10px auto;
+    }
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-left: 0 !important;
+      margin-top: 15px;
+    }
+  
+    .social-icons button {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      background: white;
+      transition: all 0.3s ease;
+    }
+  
+    .social-icons button:hover {
+      background: #f4f4f4;
+    }
+  }
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .farm-img {
+      display: none;
+    }
+
+    .farm-content {
+      position: static;
+      margin: 0 auto;
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+    }
+  
+    .farm-block {
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: -50px;
+    }
+
+
+    .farm-icon-block {
+        padding-left: 80px;
+      justify-content: left;
+      text-align: left; 
+      gap: 10px;
+    }
+    .farm-block h1{
+        font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .farm-content h1 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  
+    .farm-content p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  

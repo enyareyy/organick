@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import ShopSingleBc from '../assets/ShopSingle-bc.jpg'
 import './ShopSingle.css'
+import './ShopSingle.responsive.css'
 import Star from '../assets/Star.png'
 import { FiArrowRight } from 'react-icons/fi'
 import Card from '../card/Card';
@@ -91,7 +92,7 @@ return (
                     </div>
                     <div className="sinle-card-img">
                         <img src={product.link} alt="" />
-                    </div>
+                    </div> 
                 </div>
             
             <div className="single-content">
@@ -116,12 +117,15 @@ return (
                     onChange={(e) => setQuantity(e.target.value)}
                                 placeholder='Quantity...'
                     />
-                    <button onClick={handleAddToCart} className="hero-two-content-btn">
+                    <div className="shopSingleBtn">
+                        <button onClick={handleAddToCart} className="hero-two-content-btn">
                                 {t("Add To Cart")}
                                 <span className="icon-circle-two">
                                     <FiArrowRight color="##335B6B" size={16} />
                                 </span>
                             </button>
+                    </div>
+                    
                 </div>
             </div>
         </div>

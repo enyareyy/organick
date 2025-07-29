@@ -1,0 +1,55 @@
+@media screen and (max-width: 767px) {
+  .card {
+    width: 140px;     
+    height: 230px;    
+    padding: 10px;
+  }
+  .cardType p {
+    padding: 3px 8px;
+    font-size: 10px;
+  }
+
+  .ProductImg {
+    height: 100px;    
+  }
+
+  .card h3 {
+    font-size: 14px;  
+  }
+ 
+  .price img {
+    width: 35px;      
+  }
+
+  .original {
+    font-size: 12px;
+  }
+
+  .discount {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 140px;
+    height: 230px;
+    padding: 8px;
+  }
+  .cardType p {
+    padding: 2px 6px;
+    font-size: 8px;
+  }
+
+  .ProductImg {
+    height: 110px;
+  }
+
+  .card h3 {
+    font-size: 13px;
+  }
+
+  .price img {
+    width: 20px;
+  }
+}
